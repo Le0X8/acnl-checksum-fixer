@@ -21,8 +21,8 @@ fn main() {
 
     fix_hash(&mut reader, 0x80, 0x1c);
     for i in 0..4 {
-        fix_hash(&mut reader, 0xa0 + (0x9f10 * i), 0x6b84);
-        fix_hash(&mut reader, 0xa0 + (0x9f10 * i) + 0x6b88, 0x38f4);
+        fix_hash(&mut reader, 0xa0 + (0xa480 * i), 0x6b84);
+        fix_hash(&mut reader, 0xa0 + (0xa480 * i) + 0x6b88, 0x38f4);
     }
 
     fix_hash(&mut reader, 0x292a0, 0x22bc8);
